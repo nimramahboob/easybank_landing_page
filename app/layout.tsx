@@ -1,8 +1,11 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Public_Sans } from 'next/font/google'
 import './globals.css'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const publicSans = Public_Sans({ subsets: ['latin'] })
+
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,8 +18,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className='h-[100vh]'>
+      <body className={`${publicSans.className} h-full flex flex-col text-base text-Grayish-Blue lg:text-lg bg-Very-Light-Gray`}>
+
+        <Navbar />
+        <main className=''>
+        {children}
+        </main>
+        <Footer />
+      </body>
+      
     </html>
   )
 }

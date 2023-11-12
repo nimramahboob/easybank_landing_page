@@ -2,26 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+h1, h2, h3, h4 {
+    @apply text-Dark-Blue font-light
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+p, span {
+    @apply font-light
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.btn {
+    @apply bg-gradient-to-r from-Lime-Green to-Bright-Cyan text-white py-2 px-9 rounded-full font-medium hover:opacity-70 transition lg:py-3
 }
+
+.overlay {
+    @apply absolute top-0 left-0 bottom-0 right-0 bg-Dark-Blue opacity-40 -z-30
+}
+
+.gradient {
+    @apply bg-gradient-to-r from-Lime-Green to-Bright-Cyan
+}
+
+.navLink-mobile {
+    @apply text-Dark-Blue text-lg hover:text-Lime-Green
+}
+
+.navLink-desktop {
+    @apply text-sm h-[74px] bg-gradient-to-r from-Lime-Green to-Bright-Cyan hover:text-Dark-Blue lg:text-base lg:h-[80px] transition
+}
+
+.link-text {
+    @apply bg-white h-full flex items-center justify-center hover:h-[70px] lg:hover:h-[76px]  transition
+}
+
+.footer-link {
+    @apply cursor-pointer hover:text-Lime-Green transition
+}
+
