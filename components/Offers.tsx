@@ -5,7 +5,7 @@ export default function Offers() {
         <div className="mt-20 bg-Light-Grayish-Blue px-4 py-16 lg:mt-0 lg:py-20">
             <div className="md:flex md:flex-col md:items-center md:w-5/6 md:m-auto lg:block">
 
-            <div className="text-center lg:text-left w-[570px]">
+            <div className="text-center md:w-[570px] lg:text-left">
             <h2 className="text-[34px] leading-tight lg:text-[40px]">Why choose Easybank?</h2>
             <p className="mt-4">We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.</p>
             </div>

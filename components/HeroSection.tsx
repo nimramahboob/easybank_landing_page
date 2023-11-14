@@ -19,7 +19,7 @@ export default function HeroSection() {
         alt='image mockups'
         width={100}
         height={0}
-        className='absolute -top-[122px] left-1/2 -translate-x-1/2 w-11/12'
+        className='absolute -top-[50px] left-1/2 -translate-x-1/2 w-11/12'
       />
     </div>
 
